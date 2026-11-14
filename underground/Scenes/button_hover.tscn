@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://df2bgl5chdb7v"]
+
+[ext_resource type="Script" uid="uid://dnf8ak32balrs" path="res://button.gd" id="1_h4hvv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vgr1x"]
+bg_color = Color(0.61960787, 0.7607843, 0.8627451, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[node name="Control" type="Control" unique_id=173763934]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="." unique_id=1804901379]
+layout_mode = 0
+offset_right = 173.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(0.17254902, 0.44705883, 0.7019608, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_vgr1x")
+text = "Enter"
+script = ExtResource("1_h4hvv")
